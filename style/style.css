@@ -1,0 +1,58 @@
+@import url("header.css");
+@import url("main-section.css");
+@import url("our-advantages.css");
+@import url("product.css");
+@import url("section.css");
+@import url("form.css");
+@import url("review.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    font-family: "Golos Text", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3E3E3E;
+    text-align: center;
+    font-size: 50px;
+}
+
+.our-advantages_title{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+
+    .our-advantages__title{
+        margin-bottom: 20px;
+    }
+
+    .our-advantages{
+        padding-top: 20px;
+    }
+
+    .product-section__card{
+        margin-left: 10px !important;
+    }
+}
+.title {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+}

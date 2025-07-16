@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.form-section__block{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    position: relative;
+}
+
+
+.form-section__container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.form-section__block1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.form-section__block1 .input-wrapper:first-child {
+    width: 250px;
+}
+
+.form-section__block1 .input-wrapper:last-child {
+    width: calc(100% - 280px);
+}
+
+.form-section__input {
+    border: none;
+    border-bottom: 5px solid #000;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-section__input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.material-toggle-btn {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 63px;
+    height: 63px;
+    background-image: url('images/image-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+.material-toggle-btn.rotated {
+    transform: rotate(180deg);
+}
+
+.input-wrapper:nth-child(3) .material-toggle-btn {
+    bottom: 5px;
+}
+.form-section__button {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 15px;
+    width: 450px;
+    background-color: #FFC000;
+    text-align: center;
+    margin: auto;
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section__button:hover {
+    transform: scale(1.03);
+    box-shadow: 7px 6px 8px rgba(0, 0, 0, 0.3);
+}

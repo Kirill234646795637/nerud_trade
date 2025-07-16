@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+.stages-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.stages__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stage-card {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+.stage-card__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-out;
+}
+.stage-card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFD800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+    padding: 20px;
+}
+.stage-card:hover .stage-card__front {
+    transform: translateY(-100%);
+}
+
+.stage-card:hover .stage-card__back {
+    transform: translateY(0);
+}
+.stage-card__title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #3E3E3E;
+}
+
+.stage-number {
+    font-family: "Tektur", sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    color: #FFD800;
+    margin: 0;
+}
+
+.stage-title {
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFD800;
+    margin: 0;
+    text-align: left;
+}
+
+.stage-card__img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stage-card:nth-child(1) .stage-card__img {
+    background-image: url(../images/stages/stage1.png);
+}
+
+.stage-card:nth-child(2) .stage-card__img {
+    background-image: url(../images/stages/stage2.png);
+}
+
+.stage-card:nth-child(3) .stage-card__img {
+    background-image: url(../images/stages/stage3.png);
+}
+
+.stage-card:nth-child(4) .stage-card__img {
+    background-image: url(../images/stages/stage4.png);
+}
+
+.back-text {
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3E3E3E;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .stage-card {
+        flex: 1 1 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .stage-card {
+        flex: 1 1 200px;
+        height: 250px;
+    }
+    .stage-card__img {
+        height: 150px;
+    }
+    .stage-number {
+        font-size: 50px;
+    }
+    .stage-title {
+        font-size:20px;
+    }
+    .back-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stages__cards {
+        gap: 20px;
+    }
+    .stage-card {
+        flex: 1 1 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+    .stage-card__img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stage-card {
+        height: 250px;
+    }
+    .stage-card__img {
+        height: 150px;
+    }
+    .stage-number {
+        font-size: 40px;
+    }
+    .stage-title {
+        font-size: 18px;
+    }
+    .back-text {
+        font-size: 18px;
+    }
+}
+
+.stage-card {
+    width: 240px;
+    height: 240px;
+}
+
+.stage-card__img {
+    height: 150px;
+}
+
+.stage-number {
+    font-size: 60px;
+}
+
+.stage-title {
+    font-size: 20px;
+}
+
+.back-text {
+    font-size: 18px;
+}
